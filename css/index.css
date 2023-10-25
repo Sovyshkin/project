@@ -1,0 +1,316 @@
+/* Сапёр */
+body {
+  /* background-image: url(../assets/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: saturate(50%) brightness(70%); */
+  margin: 0;
+  user-select: none;
+  font-family: "Arial";
+  /* background: linear-gradient(60deg, #536976, #292E49);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite; */
+}
+
+/* @keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
+} */
+
+.btn {
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  background: transparent;
+  color: #CCDDE2;
+  backdrop-filter: blur(5px);
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  transition: transform 500ms;
+  color: #CCDDE2;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.btn:active {
+  transform: scale(1.3);
+  color: #CCDDE2;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.h1-text {
+  margin-top: 50px;
+  text-align: center;
+  font-family: 'GULAG Pavljenko';
+  color: #CCDDE2;
+}
+
+.title {
+  position: relative;
+}
+
+.bg {
+  position: absolute;
+  background: url(../assets/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: saturate(50%) brightness(79%);
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+}
+
+.d-none {
+  display: none;
+}
+
+.gameover {
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  color: #CCDDE2;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  background-color: transparent;
+  border-radius: 20px;
+  backdrop-filter: blur(1px);
+}
+
+.container {
+  display: inline-block;
+  width: 500px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  transition: 3000ms;
+  background-color: #0CCA4A;
+  border-radius: 20px;
+}
+
+.item_near {
+  background-color: lightsalmon;
+}
+
+.item_bomb {
+  background-color: #E3170A;
+}
+
+.item_closed {
+  background-color: black;
+}
+
+.btn-start {
+  text-align: center;
+  color: #CCDDE2;
+}
+
+.btn-save {
+  text-align: center;
+  color: #CCDDE2;
+}
+
+.text {
+  text-align: center;
+  font-size: 35px;
+  font-family: 'GULAG Pavljenko';
+  color: #CCDDE2;
+}
+
+.text-2 {
+  font-weight: 600;
+  font-size: 20px;
+  font-family: 'GULAG Pavljenko';
+  color: #CCDDE2;
+}
+
+/* Создание аватара */
+.constructor {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.username-container {
+  padding: 10px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 30px;
+  text-align: center;
+  min-height: 60px;
+  word-break: break-all;
+  color: #CCDDE2;
+}
+
+.left {
+  width: 400px;
+}
+
+.right {
+  width: 300px;
+}
+.avatar {
+  position: relative;
+}
+
+
+.constructor {
+  padding: 100px 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  flex-direction: column-reverse;
+}
+
+.username-container {
+  padding: 10px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 30px;
+  text-align: center;
+  min-height: 60px;
+  word-break: break-all;
+}
+
+.left {
+  width: 40%;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.avatar {
+  position: relative;
+}
+
+
+.frame {
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  border: 8px solid black;
+}
+
+img,
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+.label-row {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.label-row label,
+.label-row .form-check {
+  width: 30%;
+}
+.label-row input,
+.label-row select {
+  flex: 1;
+}
+
+
+/* Класс для скрытия аксессуаров */
+.hidden {
+  display: none;
+}
+
+
+/* Цвета */
+.frame {
+  background-color: #7aa2ff;
+}
+.tshirt-color {
+  fill: black;
+}
+
+/* Форма рамки */
+.frame-1 {
+  border-style: solid;
+}
+.frame-2 {
+  border-style: dashed;
+}
+.frame-3 {
+  border-style: double;
+}
+.frame-4 {
+  border-style: none;
+}
+
+.avatar_flex {
+  display: inline-block;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.menu {
+  margin-top: 90px;
+}
+
+.text-btn1 {
+  font-weight: 600;
+}
+
+.text2 {
+  padding: 10px 170px 60px 200px;
+  text-align: center;
+  font-size: 26px;
+  font-family: 'GULAG Pavljenko';
+  color: #CCDDE2;
+  font-weight: 500;
+}
+
+.btn-back {
+  text-align: center;
+}
+
+.btn-back2 {
+  margin: 10px;
+  text-align: center;
+}
+
+.btn-back3 {
+  margin: 10px;
+  text-align: center;
+}
+
+.h1_text {
+  margin-top: 180px;
+  text-align: center;
+  font-family: 'GULAG Pavljenko';
+  color: #CCDDE2;
+  font-weight: 600;
+}
+
+.danger {
+  color: #D10000;
+}
